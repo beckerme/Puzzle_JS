@@ -1,0 +1,87 @@
+body{
+    background-color: #607a8a;
+}
+
+.main-jogo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div-jogo{
+    margin-top: -2em;
+}
+
+.tabuleiro {
+	width: 710px;
+	height: 720px;
+	border-radius: 10px;
+}
+
+.modo {
+	position: absolute;
+	transition: all 0.5s;
+}
+
+#tela-inicio {
+	opacity: 0.5;
+	z-index: 1; /*ordem de empilhamento*/
+}
+
+#tela-inicio img, #tela-final img {
+	width: 710px;
+	height: 720px;
+}
+
+#tela-final {
+	opacity: 0;
+	z-index: -1; /*ordem de empilhamento*/
+}
+
+#container {
+	position: relative;
+	margin: 50px auto;
+	background-color: white;
+	/* border: outset; */
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.peca {
+	width: 220px;
+	height: 220px;
+	margin: 5px 10px 5px 10px;
+	position: absolute;
+	transition: left 0.5s, top 0.5s;
+}
+
+.peca img {
+	width: 100%;
+}
+
+.peca:hover {
+    cursor: pointer;
+	border-radius: 10px;
+}
+
+.coluna-imagem img{
+	width: 500px;
+	/* border: outset; */
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	margin-top: 10px;
+}
+
+.botao {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.botao a {
+	text-decoration: none;
+	color: black;
+	background-color: white;
+	/* border: outset white; */
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 20px;
+}
